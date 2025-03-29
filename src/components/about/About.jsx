@@ -15,7 +15,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-                    Self-taught frontend developer turning ideas into interactive experiences. Driven by curiosity and a love for problem-solving — bringing innovation to life, one line at a time. 
+                    Self-taught frontend developer turning ideas into interactive experiences. Driven by curiosity and a love for problem solving — bringing innovation to life, one line at a time. 
                     </p>
                     <a download="" href={Resume} className="button button-flex">Download Resume
                     <svg
