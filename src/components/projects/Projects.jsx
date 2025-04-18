@@ -191,6 +191,66 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="projects__content">
+                    <div>
+                        <i class='uil uil-chat-info projects__icon' ></i>
+                        <h3 className="projects__title">Estate <br/> App</h3>
+                    </div>
+                    <span className="projects__button" onClick={() => setToggle(2)} >View More
+                    <i className="uil uil-arrow-right projects__button-icon"></i>
+                    </span>
+
+                    <div className={toggle === 2 ? "projects__modal active-modal" : "projects__modal"}>
+                        <div className="projects__modal-content">
+                            <i className="uil uil-times projects__modal-close" onClick={() => setToggle(0)} ></i>
+                            <h3 className="projects__modal-title">Real Estate</h3>
+                            <div className="projects__modal-subtitle">
+                                <p className="projects__modal-description">
+                                  A Real Estate Web App for buying or renting homes easily
+                                </p>
+                                <a href="https://github.com/19fathima/Real-Estate" target='_blank'><i class='bx bx-link-alt'></i></a>
+                            </div>
+
+                            <ul className="projects__modal-items grid">
+                                <li className="projects__modal-item">
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        User authentication and account verification.
+                                    </p>
+                                </li>
+
+                                <li className="projects__modal-item">
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        Properties can be posted & tracked on board layout.
+                                    </p>
+                                </li>
+
+                                <li className="projects__modal-item">
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        Filter and search features for properties.
+                                    </p>
+                                </li>
+
+                                <li className="projects__modal-item">
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        Users get notified on every new property listing.
+                                    </p>
+                                </li>
+
+                                <li className="projects__modal-item">
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        TechStack: ReactJS, React Toast, Framer motion
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </section>
